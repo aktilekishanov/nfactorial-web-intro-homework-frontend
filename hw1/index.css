@@ -1,0 +1,150 @@
+body {
+  margin: 20px 40px;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+/*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+.wrapper {
+  display: flex;
+  height: 60px;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+/*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+.redExample {
+  flex: 1;
+  background-color: red;
+}
+
+/*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+.blueExample {
+  flex: 1;
+  background-color: blue;
+}
+
+/*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+.emptyExample2 {
+  display: flex;
+  flex: 1;
+  flex-direction: row-reverse;
+}
+
+.blueExample2 {
+  width: 80px;
+  background-color: blue;
+}
+
+/* TODO: Add CSS for the rest of your solution below */
+
+/* ROW 3 */
+
+.red-3 { 
+  width: 80px;
+  background-color: red;
+}
+
+.blue-3 { 
+  width: 80px;
+  background-color: blue;
+}
+
+.wrapper-3 {
+  background-color: green;
+  justify-content: space-between;
+}
+
+/* ROW 4 */
+
+.red-4 { 
+  flex: 1;
+  background-color: red;
+}
+
+.blue-4 { 
+  width: 80px;
+  background-color: blue;
+}
+
+/* ROW 5 */
+
+.wrapper-5 {
+  background-color: green;
+  justify-content: center;
+}
+
+.red-5 {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  align-self: center;
+}
+
+/* ROW 6 */
+.wrapper-6 {
+  background-color: red;
+  justify-content: center;
+}
+
+.blue-6 {
+  width: 80px;
+  background-color: blue;
+}
+
+/* ROW 7 */
+
+.wrapper-7 {
+  background-color: blue;;
+}
+.left-7 {
+  width: 80px;
+  background-color: red;
+}
+
+.right-7 {
+  flex: 1;
+  height: 20px;
+  background-color: green;
+  align-self: center;
+}
+
+/* ROW 8 */
+
+.wrapper-8 {
+  justify-content: space-between;
+}
+
+.row-8 {
+  min-width: 15px;
+}
+
+.row-8:nth-child(odd) {
+  width: 80px;
+  background-color: orange;
+}
+
+.row-8:nth-child(even) {
+  flex: 1;
+  background-color: green;
+}
+
+/* ROW 9 */
+
+.wrapper-9 {
+  justify-content: space-between;
+}
+.row-9 {
+  width: 15px;
+  background-color: green;
+}
+
+.row-9:nth-child(odd) {
+  flex: 1;
+  background-color: orange;
+}
